@@ -20,3 +20,4 @@
 //= switchery
 //= fancyselect
 //= passy
+//= stickup

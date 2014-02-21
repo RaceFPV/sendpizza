@@ -1,22 +1,40 @@
 <row>
 	<!-- MAIN IMAGE SECTION -->
-	<div id="headerwrap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-10 col-lg-offset-1">
+<div id="headerwrap" id="home" name="home">
+			<header class="clearfix">
 					<h1>Gift of pizza</h1>
-					<h2>Share pizza with anyone</h2>
-					<div class="spacer"></div>
-					<i class="fa fa-angle-down"></i>
-				</div>
+					<p>Share pizza with anyone</p>
+          <a href="#learn" class="btn btn-default btn-lg">Find Out More</a>
+	  		</header>	    
+	    </div><!-- /headerwrap -->
+  
+  		<!-- ==== GREYWRAP ==== -->
+		<div id="greywrap">
+			<div class="row">
+				<div class="col-lg-4 callout">
+					<span class="fa fa-bolt"></span>
+					<h2>Fast</h2>
+					<p>We take care of all the ordering hassle, so all you have to do is decide what kind of pizza you would like to share. </p>
+				</div><!-- col-lg-4 -->
+					
+				<div class="col-lg-4 callout">
+					<span class="fa fa-thumb-tack"></span>
+					<h2>Safe</h2>
+					<p>No need to enter in an address, just ask for their giftofpizza username or email address and we'll make sure it gets there. </p>
+				</div><!-- col-lg-4 -->	
+				
+				<div class="col-lg-4 callout">
+					<span class="fa fa-heart"></span>
+					<h2>Love</h2>
+					<p>We love watching people give back, and we know once you try it you'll be hooked too.   </p>
+				</div><!-- col-lg-4 -->	
 			</div><!-- row -->
-		</div><!-- /container -->
-	</div><!-- /headerwrap -->
+		</div><!-- greywrap -->
 
-	<!-- WELCOME SECTION -->
+	<!-- How it works section -->
     <div class="container">
       <div class="row mt">
-      	<div class="col-lg-8 col-lg-offset-2" align="center">
+      	<div class="col-lg-8 col-lg-offset-2" id="learn" align="center">
 	        <h1>How it works</h1>
 	        <p>Enter the name of the person you would like to send a pizza to</p>
           <div class="fa fa-arrow-down"></div>
@@ -106,3 +124,21 @@
 		</div><!-- container -->
 	</div><!-- Call to action -->
 	
+  
+<script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+  </script>

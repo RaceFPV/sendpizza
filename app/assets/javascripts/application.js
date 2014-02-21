@@ -21,3 +21,4 @@
 //= fancyselect
 //= passy
 //= stickup
+//= perfect-scrollbar

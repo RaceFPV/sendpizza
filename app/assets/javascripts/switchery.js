@@ -1,9 +1,6 @@
 //enable via: <input type="checkbox" class="js-switch" checked />
 
-//non stock code
-var elem = document.querySelector('.js-switch');
-var init = new Switchery(elem);
-//end non stock code
+
 
 
 ;(function(){
@@ -1421,3 +1418,8 @@ require.alias("switchery/switchery.js", "switchery/index.js");if (typeof exports
 } else {
   this["Switchery"] = require("switchery");
 }})();
+
+//non stock code
+var elem = document.querySelector('.js-switch');
+var init = new Switchery(elem);
+//end non stock code

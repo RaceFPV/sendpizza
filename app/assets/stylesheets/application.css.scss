@@ -6,4 +6,13 @@
 @import 'active_admin';
 @import 'perfect-scrollbar';
 @import 'gritter';
+@import 'navigation';
+@import 'main';
 @import url(http://fonts.googleapis.com/css?family=Capriola);
+
+
+body {
+margin-top: 15px;
+  background-color: #666;
+  background-image: url(stucco.png);
+}

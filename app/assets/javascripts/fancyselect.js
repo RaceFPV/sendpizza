@@ -2,9 +2,7 @@
 // call via: <select class="basic">
 
 
-//non stock code
-$('.basic').fancySelect();
-//end non stock code
+
 
 (function() {
   var $;
@@ -211,3 +209,6 @@ $('.basic').fancySelect();
 
 }).call(this);
 
+//non stock code
+$('.basic').fancySelect();
+//end non stock code

@@ -1,13 +1,5 @@
 // Keep the navbar at the top even after the user scrolls down
 // Use via: class: "navbar-wrapper"
-
-//non stock code
-jQuery(function($) { $(document).ready( function() {
-   //enabling stickUp on the '.navbar-wrapper' class
-   $('.navbar-wrapper').stickUp();
-   });
-});
-//end non stock code   
    
 
 jQuery(
@@ -132,3 +124,12 @@ $('.stuckMenu').css("position","relative");
 });
 
 });
+
+
+//non stock code
+jQuery(function($) { $(document).ready( function() {
+   //enabling stickUp on the '.navbar-wrapper' class
+   $('.navbar-wrapper').stickUp();
+   });
+});
+//end non stock code   

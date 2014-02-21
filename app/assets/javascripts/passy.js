@@ -11,27 +11,7 @@
  *
  */
 
-//non stock code
-var $input = $( '.passyinput' );
-var $output = $( '.passyoutput' );
 
-$.passy.requirements.length.min = 4;
-
-var feedback = [
-    { color: '#c00', text: 'poor' },
-    { color: '#c80', text: 'okay' },
-    { color: '#0c0', text: 'good' },
-    { color: '#0c0', text: 'fabulous!' }
-];
-
-$input.passy(function(strength, valid) {
-        $output.text(feedback[strength].text);
-        $output.css('background-color', feedback[strength].color);
-
-        if( valid ) $input.css(' border-color', 'green' );
-        else $input.css( 'border-color', 'red' );
-    });
-//end non stock code
 
 
 (function($) {
@@ -237,3 +217,25 @@ $input.passy(function(strength, valid) {
 
 	$.extend({ passy: passy });
 })(jQuery);
+
+  //non stock code
+var $input = $( '.passyinput' );
+var $output = $( '.passyoutput' );
+
+$.passy.requirements.length.min = 4;
+
+var feedback = [
+    { color: '#c00', text: 'poor' },
+    { color: '#c80', text: 'okay' },
+    { color: '#0c0', text: 'good' },
+    { color: '#0c0', text: 'fabulous!' }
+];
+
+$input.passy(function(strength, valid) {
+        $output.text(feedback[strength].text);
+        $output.css('background-color', feedback[strength].color);
+
+        if( valid ) $input.css(' border-color', 'green' );
+        else $input.css( 'border-color', 'red' );
+    });
+//end non stock code

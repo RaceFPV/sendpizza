@@ -21,7 +21,6 @@ gem 'jbuilder', '~> 1.2'
 gem 'ruby-progressbar' #nice progressbar for seeding process
 gem "gritter" #for better flash messages
 gem 'newrelic_rpm' #for server statistics tracking
-gem 'bullet'
 
 group :doc do
   gem 'sdoc', require: false
@@ -39,6 +38,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'better_errors'
   gem 'rspec-rails'
+  gem 'bullet'
 end
 
 group :test do

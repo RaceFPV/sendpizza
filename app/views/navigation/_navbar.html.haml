@@ -1,0 +1,22 @@
+- if !signed_in?
+  = render partial: "navigation/modals"
+%nav.navbar.navbar-default.navbar-wrapper{role: "navigation", style: "width: 100%;margin-bottom: 0px; "}
+  .container-fluid
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to "Gift of Pizza", root_path, class: 'navbar-brand', style: 'text-decoration: none'
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-right.nav-pills
+        - if signed_in?
+          %li= link_to "Sign out", destroy_user_session_path, :method => :delete
+        - else
+          %li
+            %a{"data-target" => "#signin", "data-toggle" => "modal"} Sign in
+    / /.navbar-collapse
+  / /.container-fluid

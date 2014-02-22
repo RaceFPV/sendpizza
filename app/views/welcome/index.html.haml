@@ -1,32 +1,23 @@
 %row
-  / MAIN IMAGE SECTION
   #headerwrap{name: "home"}
     %header.clearfix
       %h1 Gift of pizza
       %p Share pizza with anyone
       %a.btn.btn-default.btn-lg{href: "#learn"} Find Out More
-  / /headerwrap
-  / ==== GREYWRAP ====
   #greywrap
     .row
       .col-lg-4.callout
         %span.fa.fa-bolt
         %h2 Fast
         %p We take care of all the ordering hassle, so all you have to do is decide what kind of pizza you would like to share.
-      / col-lg-4
       .col-lg-4.callout
         %span.fa.fa-thumb-tack
         %h2 Safe
         %p No need to enter in an address, just ask for their giftofpizza username or email address and we'll make sure it gets there.
-      / col-lg-4
       .col-lg-4.callout
         %span.fa.fa-heart
         %h2 Love
         %p We love watching people give back, and we know once you try it you'll be hooked too.
-      / col-lg-4
-    / row
-  / greywrap
-  / How it works section
   .container
     .row.mt
       #learn.col-lg-8.col-lg-offset-2{align: "center"}
@@ -40,9 +31,6 @@
         %p Have the gift of pizza on someones doorstep!
       .col-lg-4.col-lg-offset-4{align: "center"}
         %button.btn.btn-green{type: "button"} Get started now
-    / /row
-  / /.container
-  / SERVICES SECTION
   #services
     .container
       .row.mt
@@ -61,10 +49,6 @@
         .col-lg-3
           %h3 Global Services
           %p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-      / row
-    / container
-  / services section
-  / CLIENTS LOGOS
   #lg
     .container
       .row.centered
@@ -78,10 +62,6 @@
           = image_tag 'pizza.jpg', style: 'width: 100px; height: 100px;'
         .col-lg-2
           = image_tag 'pizza.jpg', style: 'width: 100px; height: 100px;'
-      / row
-    / container
-  / dg
-  / CALL TO ACTION
   #call
     .container
       .row
@@ -90,9 +70,6 @@
           %p Click the button below to begin the process of asking for a pizza donation.
           %p
             %button.btn.btn-green.btn-lg{type: "button"} Request a slice
-      / row
-    / container
-  / Call to action
   :javascript
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {

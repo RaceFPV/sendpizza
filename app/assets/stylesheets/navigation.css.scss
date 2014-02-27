@@ -1,13 +1,30 @@
 .navbar-brand {
- text-decoration: none;
+ text-decoration: none !important;;
  font-size: 25px;
 }
 
-.navbar-right li a {
- text-decoration: none;
+.navbar-list {
+  display: table !important;
+	margin: 0 auto !important;
+}
+
+.navbar-link {
+ text-decoration: none !important;
+ font-size: 25px;
+ margin-left: 10% !important;
+ margin-right: 10% !important;
+ cursor: pointer !important;
+}
   
+.nav-pills {
+ margin-top: 15px;
+ margin-bottom: 25px;
 }
 
 .navbar {
- margin-bottom: 0px; 
+ -webkit-border-radius: 0;
+ -moz-border-radius: 0;
+ border-radius: 0;
+ margin-top: 0px;
+ margin-bottom: 0px;
 }

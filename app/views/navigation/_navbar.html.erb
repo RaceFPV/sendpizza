@@ -1,28 +1,25 @@
 <% if !signed_in? %>
   <%= render partial: "navigation/modals" %>
 <% end %>
-<nav class="navbar navbar-default navbar-wrapper" role="navigation" style="width: 100%;margin-bottom: 0px; ">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <%= link_to "Gift of Pizza", root_path, class: 'navbar-brand', style: 'text-decoration: none' %>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-right nav-pills">
+<nav class="navbar navbar-default" role="navigation" style="width: 100%;margin-bottom: 0px;">
+    <div class="navbar-list">
+      <ul class="nav nav-pills">
+        <li><%= link_to nil, class: 'navbar-link' do %>
+          <span style="color: #A22121">S</span>end a pizz<span style="color: #A22121">a</span>
+        <% end %></li>
+        <li><%= link_to nil, class: 'navbar-link' do %>
+          <span style="color: #A22121">R</span>equest a pi<span style="color: #A22121">e</span>
+        <% end %></li>
+        <li><%= link_to nil, class: 'navbar-link' do %>
+          <span style="color: #A22121">B</span>rowse request<span style="color: #A22121">s</span>
+        <% end %></li>
         <% if signed_in? %>
-          <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+          <li><%= link_to destroy_user_session_path, :method => :delete, class: 'navbar-link' do %>
+            <span style="color: #A22121">S</span>ign ou<span style="color: #A22121">t</span>
+        <% end %></li>
         <% else %>
-          <li><a data-toggle="modal" data-target="#signin">Sign in</a></li>
+        <li><a data-toggle="modal" data-target="#signin" class="navbar-link"><span style="color: #A22121">S</span>ign i<span style="color: #A22121">n</span></a></li>
         <% end %>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
 </nav>

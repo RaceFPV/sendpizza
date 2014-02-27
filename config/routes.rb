@@ -1,4 +1,6 @@
 Sendpizza::Application.routes.draw do
+  get "request/info"
+  get "request/sent"
   get "send/find"
   get "send/select"
   get "send/order"

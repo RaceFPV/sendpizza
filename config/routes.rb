@@ -6,6 +6,7 @@ Sendpizza::Application.routes.draw do
   get "send/select"
   get "send/order"
   root 'welcome#index'
+  match 'send/find', to: 'send#create', via: 'post'
   devise_for :users
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

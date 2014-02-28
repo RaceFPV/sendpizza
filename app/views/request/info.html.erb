@@ -1,2 +1,23 @@
-<h1>Request#info</h1>
-<p>Find me in app/views/request/info.html.erb</p>
+<row>
+  <div id="headerwrap" style="padding-left: 65px;padding-bottom: 50px;">
+        <p id="headersubsubtext" align="left" style="margin-top:25px;">Please enter your email address and name</p>
+        <%= form_for :send do |f| %>
+        <div style="width: 25%; margin-left: 100px;">
+              <%= f.text_field :email, class: "form-control", placeholder: "Enter email address" %>
+              <%= f.text_field :name, class: "form-control", placeholder: "Name" %>
+        </div>
+    <br/>
+    <div align="right" style="margin-right: 65px;">
+          <p id="headersubsubtext">And also enter your location</p>
+          <div style="width: 25%; margin-right: 100px;">
+            <%= f.text_field :street, class: "form-control", placeholder: "Street" %>
+            <%= f.text_field :City, class: "form-control", placeholder: "City" %>
+            <%= f.text_field :State, class: "form-control", placeholder: "State" %>
+          </div>
+        </div>
+    <br/>
+    <br/>
+    <%= f.submit "Continue", class: "btn btn-large btn-primary", style: "width: 150px;" %>
+        <% end %>
+</div><!-- /headerwrap -->
+</row>

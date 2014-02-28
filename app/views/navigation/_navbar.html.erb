@@ -1,16 +1,17 @@
 <% if !signed_in? %>
   <%= render partial: "navigation/modals" %>
 <% end %>
-<nav class="navbar navbar-default" role="navigation" style="width: 100%;margin-bottom: 0px;">
+<nav class="navbar navbar-default" role="navigation" style="width: 100%;margin-bottom: 0px;margin-top: 25px; margin-left: 25px;">
+  <%= link_to "", root_path, class: "fa fa-home", style: "float: left; font-size: 35px;" %>
     <div class="navbar-list">
       <ul class="nav nav-pills">
-        <li><%= link_to nil, class: 'navbar-link' do %>
+        <li><%= link_to send_find_path, class: 'navbar-link' do %>
           <span style="color: #A22121">S</span>end a pizz<span style="color: #A22121">a</span>
         <% end %></li>
-        <li><%= link_to nil, class: 'navbar-link' do %>
+        <li><%= link_to request_info_path, class: 'navbar-link' do %>
           <span style="color: #A22121">R</span>equest a pi<span style="color: #A22121">e</span>
         <% end %></li>
-        <li><%= link_to nil, class: 'navbar-link' do %>
+        <li><%= link_to browse_index_path, class: 'navbar-link' do %>
           <span style="color: #A22121">B</span>rowse request<span style="color: #A22121">s</span>
         <% end %></li>
         <% if signed_in? %>

@@ -1,2 +1,26 @@
-<h1>Send#find</h1>
-<p>Find me in app/views/send/find.html.erb</p>
+<row>
+  <div id="headerwrap" style="padding-left: 65px;padding-bottom: 50px;">
+        <p id="headersubsubtext" align="left" style="margin-top:25px;">Enter the pizza giftee's email address</p>
+        <%= form_for :send do |f| %>
+        <div style="width: 25%; margin-left: 100px;">
+            <div class="input-group">
+              <%= f.text_field :email, class: "form-control", placeholder: "Enter email address" %>
+              <span class="input-group-btn">
+                <%= f.submit "Continue", class: "btn btn-large btn-primary"  %>
+              </span>
+            </div>
+        </div>
+    <br/>
+    <div align="right" style="padding-right: 65px;">
+          <p id="headersubsubtext">Or manually enter their address</p>
+          <div style="width: 25%; margin-right: 100px;">
+            <%= f.text_field :name, class: "form-control", placeholder: "Name" %>
+            <%= f.text_field :street, class: "form-control", placeholder: "Street" %>
+            <%= f.text_field :City, class: "form-control", placeholder: "City" %>
+            <%= f.text_field :State, class: "form-control", placeholder: "State" %>
+          </div>
+          <%= f.submit "Continue", class: "btn btn-large btn-primary", style: "margin-right: 100px;"  %>
+        </div>
+        <% end %>
+</div><!-- /headerwrap -->
+</row>
